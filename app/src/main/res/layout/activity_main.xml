@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3CDCD"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:gravity="center"
+                android:text="Quiz Mathémamique :"
+                android:textColor="#B50404"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/Q1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Question 1 :  L'expression (9 - x²) est égale à : "
+                android:textColor="#127516"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/Q1A1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="(x - 3) (x + 3)" />
+
+            <CheckBox
+                android:id="@+id/Q1A2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="(3 - x) (3 + x)" />
+
+            <CheckBox
+                android:id="@+id/Q1A3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="(3 - x)²" />
+
+            <CheckBox
+                android:id="@+id/Q1A4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="(3 - x) (3 - x)" />
+
+            <TextView
+                android:id="@+id/Q2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Question 2 : Quelle est l'égalité de (a+b)² - (a-b)² ?"
+                android:textColor="#127516"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/Q2A1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4ab" />
+
+            <CheckBox
+                android:id="@+id/Q2A2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="zero" />
+
+            <CheckBox
+                android:id="@+id/Q2A3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2ab" />
+
+            <CheckBox
+                android:id="@+id/Q2A4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="a+b" />
+
+
+            <TextView
+                android:id="@+id/Q3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Question 3 : le périmètre d'un cercle de rayon R ?"
+                android:textColor="#127516"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/Q3A1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2 (3,14 x R)" />
+
+            <CheckBox
+                android:id="@+id/Q3A2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3,14 x R" />
+
+            <CheckBox
+                android:id="@+id/Q3A3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="R² x 3,14" />
+
+            <CheckBox
+                android:id="@+id/Q3A4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2R² x 3,14" />
+
+            <TextView
+                android:id="@+id/Q4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Question 4 : ABC est un triangle rectangle en A ,que dit vitagors"
+                android:textColor="#127516"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/Q4A1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BC² =AB² " />
+
+            <CheckBox
+                android:id="@+id/Q4A2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AB² =BC² + AC²" />
+
+            <CheckBox
+                android:id="@+id/Q4A3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BC² =AB² + AC²" />
+
+            <CheckBox
+                android:id="@+id/Q4A4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AC² =BC² + AB²" />
+
+            <Button
+                android:id="@+id/but"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="#3F51B5"
+                android:padding="20dp"
+                android:text="Button"
+                android:textSize="24sp"
+                tools:text="Result" />
+
+            <TextView
+                android:id="@+id/result_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="X/20"
+                android:textSize="36sp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
